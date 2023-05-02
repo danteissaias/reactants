@@ -76,7 +76,7 @@
 }
 
 .item.danger[data-highlighted] {
-  background: var(--reda4);
+  background: var(--redA4);
 }
 
 .item.danger svg {

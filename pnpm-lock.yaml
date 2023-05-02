@@ -2,7 +2,49 @@ lockfileVersion: '6.0'
 
 importers:
 
-  reactants:
+  apps/website:
+    dependencies:
+      '@faker-js/faker':
+        specifier: ^7.6.0
+        version: 7.6.0
+      '@reactants/ui':
+        specifier: workspace:^
+        version: link:../../packages/ui
+      '@tanstack/react-table':
+        specifier: ^8.8.5
+        version: 8.8.5(react-dom@18.2.0)(react@18.2.0)
+      '@types/ms':
+        specifier: ^0.7.31
+        version: 0.7.31
+      '@types/node':
+        specifier: ^18.16.2
+        version: 18.16.2
+      '@types/react':
+        specifier: ^18.2.0
+        version: 18.2.0
+      '@types/react-dom':
+        specifier: ^18.2.1
+        version: 18.2.1
+      ms:
+        specifier: ^2.1.3
+        version: 2.1.3
+      next:
+        specifier: 13.3.1
+        version: 13.3.1(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: ^18.2.0
+        version: 18.2.0(react@18.2.0)
+      react-feather:
+        specifier: ^2.0.10
+        version: 2.0.10(react@18.2.0)
+      typescript:
+        specifier: ^5.0.4
+        version: 5.0.4
+
+  packages/ui:
     dependencies:
       '@radix-ui/react-alert-dialog':
         specifier: ^1.0.3
@@ -83,48 +125,6 @@ importers:
       tsup:
         specifier: ^6.7.0
         version: 6.7.0(typescript@5.0.4)
-      typescript:
-        specifier: ^5.0.4
-        version: 5.0.4
-
-  website:
-    dependencies:
-      '@faker-js/faker':
-        specifier: ^7.6.0
-        version: 7.6.0
-      '@reactants/ui':
-        specifier: workspace:^
-        version: link:../reactants
-      '@tanstack/react-table':
-        specifier: ^8.8.5
-        version: 8.8.5(react-dom@18.2.0)(react@18.2.0)
-      '@types/ms':
-        specifier: ^0.7.31
-        version: 0.7.31
-      '@types/node':
-        specifier: ^18.16.2
-        version: 18.16.2
-      '@types/react':
-        specifier: ^18.2.0
-        version: 18.2.0
-      '@types/react-dom':
-        specifier: ^18.2.1
-        version: 18.2.1
-      ms:
-        specifier: ^2.1.3
-        version: 2.1.3
-      next:
-        specifier: 13.3.1
-        version: 13.3.1(react-dom@18.2.0)(react@18.2.0)
-      react:
-        specifier: ^18.2.0
-        version: 18.2.0
-      react-dom:
-        specifier: ^18.2.0
-        version: 18.2.0(react@18.2.0)
-      react-feather:
-        specifier: ^2.0.10
-        version: 2.0.10(react@18.2.0)
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
