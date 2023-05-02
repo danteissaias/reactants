@@ -78,7 +78,7 @@
 
 .bar:nth-child(12) {
   transform: rotate(330deg) translate(146%);
-  animation-delay: -0.1s;
+  animation-delay: -0.15s ease;
 }
 
 @keyframes spin {

@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  transition: color 0.1s;
+  transition: color 0.15s ease;
   cursor: pointer;
   border: 0;
   border-radius: var(--br-4);
@@ -83,7 +83,7 @@
 }
 
 .sortable .icon {
-  transition: transform 0.1s;
+  transition: transform 0.15s ease;
   width: 16px;
   height: 16px;
 }

@@ -2,7 +2,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.1s, transform 0.1s, color 0.1s;
+  transition: background-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
   cursor: pointer;
   border: 0;
   font-weight: var(--fw-500);

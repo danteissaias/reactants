@@ -30,11 +30,11 @@
 }
 
 .content[data-state='open'] {
-  animation: scale-in 0.1s;
+  animation: scale-in 0.15s ease;
 }
 
 .content[data-state='closed'] {
-  animation: scale-out 0.1s;
+  animation: scale-out 0.15s ease;
 }
 
 .item {

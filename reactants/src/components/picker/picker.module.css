@@ -1,7 +1,7 @@
 .root {
   position: relative;
   transform-style: preserve-3d;
-  transition: box-shadow 0.1s;
+  transition: box-shadow 0.15s ease;
   border: 1px solid var(--gray5);
   border-radius: var(--br-6);
   padding: 3px;
@@ -23,7 +23,7 @@
 
 .item {
   position: relative;
-  transition: color 0.1s, font-weight 0.1s;
+  transition: color 0.15s ease, font-weight 0.15s ease;
   cursor: pointer;
   border: none;
   border-radius: var(--br-4);
