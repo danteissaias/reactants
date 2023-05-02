@@ -1,6 +1,6 @@
 {
   "name": "@reactants/ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "sideEffects": false,
   "files": [
     "dist"
@@ -50,6 +50,7 @@
   "devDependencies": {
     "@types/node": "^18.16.2",
     "@types/react": "^18.2.0",
+    "browserslist": "^4.21.5",
     "lightningcss": "^1.20.0",
     "nodemon": "^2.0.22",
     "tsup": "^6.7.0",

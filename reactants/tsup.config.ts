@@ -1,13 +1,15 @@
 import * as fs from 'fs/promises'
-import { transform } from 'lightningcss'
+import { transform, browserslistToTargets } from 'lightningcss'
 import * as path from 'path'
 import { defineConfig } from 'tsup'
+import browserslist from 'browserslist'
 
 export default defineConfig({
   dts: true,
   format: ['esm', 'cjs'],
   banner: { js: `"use client"` },
   plugins: [],
+  minify: true,
   esbuildPlugins: [
     {
       name: 'css-module',
@@ -23,6 +25,7 @@ export default defineConfig({
           }
 
           const { code, exports } = transform({
+            targets: browserslistToTargets(browserslist('>= 0.25%')),
             code: await fs.readFile(pluginData.pathDir),
             filename: pluginData.pathDir,
             cssModules: { pattern: '[name]_[local]__[hash]' },
