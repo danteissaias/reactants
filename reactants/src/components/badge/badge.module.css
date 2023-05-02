@@ -13,7 +13,7 @@
 }
 
 .gray {
-  --c3: var(--gray3);
+  --c3: var(--grayA3);
   --c11: var(--gray11);
 }
 
