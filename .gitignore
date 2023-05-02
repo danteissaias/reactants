@@ -1,0 +1,7 @@
+node_modules
+dist
+.vscode
+.DS_Store
+.next
+next-env.d.ts
+.turbo

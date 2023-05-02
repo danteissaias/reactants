@@ -1,0 +1,11 @@
+.tags {
+  border: 1px solid var(--gray-6);
+  border-radius: var(--br-6);
+  background: #fff;
+  width: 200px !important;
+  height: 250px !important;
+}
+
+.dark .tags {
+  background: var(--gray-3);
+}

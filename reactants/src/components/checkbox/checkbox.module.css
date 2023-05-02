@@ -1,0 +1,80 @@
+.root {
+  all: unset;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  border-radius: var(--br-4);
+  width: var(--sp-16);
+  height: var(--sp-16);
+}
+
+.root[data-state='checked'] {
+  border: 1px solid var(--accent-10);
+  background: var(--accent-10);
+}
+
+.root[data-state='checked'][disabled] {
+  background: var(--gray-4);
+}
+
+.root[data-state='unchecked'],
+.root[data-state='indeterminate'] {
+  border: 1px solid var(--gray-a8);
+  background-color: #fff;
+}
+
+:global(.dark) .root[data-state='unchecked'],
+:global(.dark) .root[data-state='indeterminate'] {
+  background-color: var(--gray-a5);
+}
+
+@media (hover: hover) {
+  .root[data-state='unchecked']:hover:enabled,
+  .root[data-state='indeterminate']:hover:enabled {
+    border-color: var(--gray-9);
+  }
+}
+
+.root[data-state='unchecked'][disabled] {
+  cursor: not-allowed;
+  border-color: var(--gray-a5);
+  background-color: var(--gray-a3);
+}
+
+.root[data-state='unchecked']:focus-visible,
+.root[data-state='indeterminate']:focus-visible {
+  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--gray-9);
+}
+
+.root[data-state='checked']:focus-visible {
+  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--accent-9);
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--sp-16);
+  height: var(--sp-16);
+  color: #fff;
+}
+
+.root[data-state='indeterminate'] .check {
+  color: var(--gray-a11);
+}
+
+.check svg {
+  stroke-width: 3px;
+  width: 80%;
+  height: 80%;
+}
+
+.root[data-state='checked'][disabled] .check {
+  color: var(--gray-a8);
+}

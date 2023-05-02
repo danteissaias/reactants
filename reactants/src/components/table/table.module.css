@@ -1,0 +1,142 @@
+.root {
+  position: relative;
+}
+
+.filters {
+  display: flex;
+  gap: var(--sp-20);
+  margin-bottom: var(--sp-20);
+}
+
+.table-root {
+  position: relative;
+  box-shadow: 0 0 0 1px var(--gray-a6);
+  border-radius: var(--br-6);
+  background-color: #fff;
+  width: 100%;
+  overflow: hidden;
+  color: var(--gray-12);
+  font-size: var(--fs-14);
+  line-height: var(--lh-20);
+}
+
+:global(.dark) .table-root {
+  --canvas: var(--gray-2);
+
+  background-color: var(--gray-2);
+}
+
+.table {
+  vertical-align: middle;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  min-width: var(--overflow-width, 650px);
+  text-align: left;
+}
+
+.fixed .table {
+  table-layout: fixed;
+}
+
+.head {
+  --bg: var(--gray-2);
+
+  background-color: var(--gray-2);
+}
+
+.body,
+.head,
+.row {
+  vertical-align: inherit;
+}
+
+:global(.dark) .head {
+  --bg: var(--gray-3);
+
+  background-color: var(--gray-3);
+}
+
+.sortable {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.1s;
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--br-4);
+  background: none;
+  padding: 0;
+  color: inherit;
+  font-family: var(--ff-sans);
+  user-select: none;
+}
+
+.sortable:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--bg), 0 0 0 4px var(--gray-9);
+}
+
+.sortable:hover {
+  color: var(--gray-12);
+}
+
+.sortable .icon {
+  transition: transform 0.1s;
+  width: 16px;
+  height: 16px;
+}
+
+.cell {
+  vertical-align: inherit;
+  box-shadow: inset 0 -1px var(--gray-a6);
+  padding: var(--sp-12);
+}
+
+.head .cell {
+  color: var(--gray-11);
+  font-weight: var(--fw-500);
+  font-size: var(--fs-13);
+}
+
+.body .row:last-child .cell {
+  box-shadow: none;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: calc(var(--rows, 1) * 44px);
+  color: var(--gray-11);
+  text-align: center;
+}
+
+.selection {
+  width: 40px;
+}
+
+.actions {
+  width: 100px;
+}
+
+.lock {
+  margin-top: 4px;
+  padding: 1px;
+  width: 18px;
+  height: 20px;
+  color: var(--gray-11);
+}
+
+.counter {
+  border: 1px solid var(--gray-a5);
+  border-radius: var(--br-round);
+  padding: 0 6px;
+  color: var(--gray-12);
+  font-size: var(--fs-12);
+  line-height: var(--sp-16);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}

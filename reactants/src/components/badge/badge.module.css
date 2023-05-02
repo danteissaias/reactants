@@ -1,0 +1,46 @@
+.root {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: var(--br-6);
+  padding: 0 var(--sp-4);
+  font-weight: var(--fw-600);
+  font-size: var(--fs-12);
+  line-height: var(--lh-20);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.gray {
+  background-color: var(--gray-4);
+  color: var(--gray-11);
+}
+
+.red {
+  background-color: var(--red-4);
+  color: var(--red-11);
+}
+
+.green {
+  background-color: var(--green-4);
+  color: var(--green-11);
+}
+
+.pink {
+  background-color: var(--pink-4);
+  color: var(--pink-11);
+}
+
+.purple {
+  background-color: var(--purple-4);
+  color: var(--purple-11);
+}
+
+.blue {
+  background-color: var(--blue-4);
+  color: var(--blue-11);
+}
+
+.accent {
+  background-color: var(--accent-4);
+  color: var(--accent-11);
+}

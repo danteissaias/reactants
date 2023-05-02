@@ -1,0 +1,11 @@
+.root {
+  background: var(--gray-a6);
+}
+
+.vertical {
+  width: 1px;
+}
+
+.horizontal {
+  height: 1px;
+}

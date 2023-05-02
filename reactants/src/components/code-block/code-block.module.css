@@ -1,0 +1,11 @@
+.root {
+  display: block;
+  border-radius: var(--br-6);
+  background-color: var(--gray-6);
+  padding: var(--sp-8);
+  color: var(--gray-12);
+  font-size: calc(0.87 * var(--fs-14));
+  line-height: var(--lh-20);
+  font-family: var(--ff-mono);
+  white-space: pre;
+}

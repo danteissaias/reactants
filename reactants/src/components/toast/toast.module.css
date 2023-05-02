@@ -1,0 +1,77 @@
+.root {
+  --spinner-size: var(--sp-16);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: var(--bs-2);
+  border: 1px solid var(--gray-6);
+  border-radius: var(--br-6);
+  background-color: #fff;
+  padding: var(--sp-12);
+  width: var(--width);
+}
+
+:global(.dark) .root {
+  border-color: var(--gray-7);
+  background-color: var(--gray-4);
+}
+
+.root svg {
+  width: var(--sp-16);
+  height: var(--sp-16);
+}
+
+.success svg {
+  color: var(--green-11);
+}
+
+.danger svg {
+  color: var(--red-11);
+}
+
+.promise svg,
+.loader {
+  position: absolute;
+  left: 14px;
+}
+
+.promise {
+  padding-left: var(--sp-40);
+}
+
+.promise > svg {
+  transform: scale(0.8);
+  transform-origin: center;
+  opacity: 0;
+  animation: fade-in 300ms ease forwards;
+}
+
+.loader[data-visible='false'] {
+  transform-origin: center;
+  animation: fade-out 0.2s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+}

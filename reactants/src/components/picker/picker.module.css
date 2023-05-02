@@ -1,0 +1,54 @@
+.root {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: box-shadow 0.1s;
+  border: 1px solid var(--gray-5);
+  border-radius: var(--br-6);
+  padding: 3px;
+  width: max-content;
+  height: var(--input-2);
+}
+
+.indicator {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: var(--br-4);
+  background-color: var(--gray-4);
+}
+
+:global(.dark) .indicator {
+  background-color: var(--gray-7);
+}
+
+.item {
+  position: relative;
+  transition: color 0.1s, font-weight 0.1s;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--br-4);
+  background: none;
+  padding: 0 var(--sp-16);
+  height: 100%;
+  color: var(--gray-12);
+  font-weight: var(--fw-400);
+  font-size: var(--fs-14);
+  font-family: var(--ff-sans);
+  text-align: center;
+}
+
+.item:focus-visible {
+  outline: none;
+}
+
+.item:focus-visible .indicator {
+  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--gray-9);
+}
+
+.item:hover {
+  color: var(--gray-11);
+}
+
+.item[data-state='checked'] {
+  color: var(--gray-12);
+}
