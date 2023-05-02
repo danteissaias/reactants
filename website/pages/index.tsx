@@ -355,7 +355,7 @@ function StackExample() {
           <div
             key={i}
             style={{
-              background: 'var(--accent-10)',
+              background: 'var(--accent10)',
               height: 50,
               width: 50,
               borderRadius: 'var(--br-6)',

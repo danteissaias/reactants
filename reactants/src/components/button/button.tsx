@@ -6,20 +6,35 @@ import { Spinner } from '@/components'
 import { useLayoutProps, LayoutProps } from '@/utils'
 import styles from './button.module.css'
 
-const { gray, green, red, pink, purple, blue, solid, ghost, accent } = styles
-
 const buttonVariants = cva(styles.root, {
   variants: {
-    svgOnly: { true: styles['svg-only'] },
-    size: { '1': styles.s1, '2': styles.s2, '3': styles.s3 },
-    color: { gray, green, red, pink, purple, blue, accent },
-    variant: { solid, ghost },
+    svgOnly: {
+      true: styles.svgOnly,
+    },
+    size: {
+      '1': styles.size1,
+      '2': styles.size2,
+      '3': styles.size3,
+    },
+    color: {
+      gray: styles.gray,
+      green: styles.green,
+      red: styles.red,
+      pink: styles.pink,
+      purple: styles.purple,
+      blue: styles.blue,
+      accent: styles.accent,
+    },
+    variant: {
+      solid: styles.solid,
+      ghost: styles.ghost,
+    },
   },
   compoundVariants: [
     {
-      color: 'gray',
       variant: 'solid',
-      className: styles['solid-gray'],
+      color: 'gray',
+      className: styles.solidGray,
     },
   ],
 })

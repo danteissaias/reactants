@@ -14,7 +14,7 @@
   display: flex;
   margin: var(--sp-4);
   border-radius: var(--br-12);
-  background-color: var(--gray-a3);
+  background-color: var(--grayA3);
   touch-action: none;
   user-select: none;
 }
@@ -41,12 +41,12 @@
   position: relative;
   transition: transform 0.12s;
   border-radius: var(--br-12);
-  background-color: var(--gray-a8);
+  background-color: var(--grayA8);
 }
 
 @media (hover: hover) {
   .thumb:hover {
-    background-color: var(--gray-a9);
+    background-color: var(--grayA9);
   }
 }
 

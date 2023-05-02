@@ -16,7 +16,7 @@
   left: -10%;
   animation: spin 1.2s linear infinite;
   border-radius: var(--br-4);
-  background-color: var(--spinner-color, var(--gray-11));
+  background-color: var(--spinner-color, var(--gray11));
   width: 24%;
   height: 8%;
 }

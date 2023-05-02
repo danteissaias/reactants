@@ -16,7 +16,7 @@
   transform-origin: var(--radix-dropdown-menu-content-transform-origin);
   will-change: opacity, transform;
   box-shadow: var(--bs-2);
-  border: 1px solid var(--gray-6);
+  border: 1px solid var(--gray6);
   border-radius: var(--br-8);
   background-color: #fff;
   padding: var(--sp-4);
@@ -25,8 +25,8 @@
 }
 
 :global(.dark) .content {
-  border: 1px solid var(--gray-7);
-  background-color: var(--gray-4);
+  border: 1px solid var(--gray7);
+  background-color: var(--gray4);
 }
 
 .content[data-state='open'] {
@@ -62,44 +62,44 @@
 
 .item[data-highlighted] {
   outline: none;
-  background: var(--gray-a4);
-  color: var(--gray-12);
+  background: var(--grayA4);
+  color: var(--gray12);
 }
 
 .item[data-highlighted] svg {
-  color: var(--gray-12);
+  color: var(--gray12);
 }
 
 .item.danger {
-  color: var(--red-11);
+  color: var(--red11);
 }
 
 .item.danger[data-highlighted] {
-  background: var(--red-a4);
+  background: var(--reda4);
 }
 
 .item.danger svg {
-  color: var(--red-11);
+  color: var(--red11);
 }
 
 .item[data-disabled] {
   cursor: not-allowed;
-  color: var(--gray-11);
+  color: var(--gray11);
 }
 
 .item[data-disabled] svg {
-  color: var(--gray-11);
+  color: var(--gray11);
 }
 
 .seperator {
   margin: var(--sp-4) 0;
-  background: var(--gray-a6);
+  background: var(--grayA6);
   height: 1px;
 }
 
 .label {
   padding: var(--sp-4) var(--sp-8);
-  color: var(--gray-11);
+  color: var(--gray11);
   font-weight: var(--fw-500);
   font-size: var(--fs-13);
 }

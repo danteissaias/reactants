@@ -19,7 +19,7 @@ export function Input({ className, style, prefix, suffix, size = '2', label, ...
   return (
     <label className={cx(styles.root, className, layoutClassName)} data-size={size} style={style}>
       {label ? (
-        <Text color="gray-11" className={styles.label}>
+        <Text color="gray11" className={styles.label}>
           {label}
         </Text>
       ) : null}

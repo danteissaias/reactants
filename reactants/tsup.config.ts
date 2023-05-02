@@ -26,6 +26,7 @@ export default defineConfig({
             code: await fs.readFile(pluginData.pathDir),
             filename: pluginData.pathDir,
             cssModules: true,
+            drafts: { nesting: true },
           })
 
           const mod: Record<string, string> = {}

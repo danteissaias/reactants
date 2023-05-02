@@ -8,9 +8,9 @@ import styles from './text.module.css'
 const textVariants = cva(styles.root, {
   variants: {
     color: {
-      'gray-11': styles.gray11,
-      'gray-12': styles.gray12,
-      'red-11': styles.red11,
+      gray11: styles.gray11,
+      gray12: styles.gray12,
+      red11: styles.red11,
     },
     size: {
       '10': styles.s10,
@@ -42,7 +42,7 @@ export interface TextProps
 }
 
 export const Text = React.forwardRef<HTMLSpanElement, TextProps>(
-  ({ size = '14', weight, color = 'gray-12', asChild, className, ...props }, ref) => {
+  ({ size = '14', weight, color = 'gray12', asChild, className, ...props }, ref) => {
     const { layoutClassName, cleanedRest: rest } = useLayoutProps(props)
     const Comp = asChild ? Slot : 'span'
 

@@ -290,7 +290,7 @@ export function Table<TData extends { id?: string | number; disableSelection?: b
 
       {pagination ? (
         <Stack align="center" direction="row" justify="between" mt="12">
-          <Text color="gray-11">
+          <Text color="gray11">
             {getDisplayRowsFrom()}-{getDisplayedRowsTo()} of {count}
           </Text>
 

@@ -4,11 +4,17 @@ import * as React from 'react'
 import { useLayoutProps, LayoutProps } from '@/utils'
 import styles from './badge.module.css'
 
-const { gray, red, green, pink, purple, blue, accent } = styles
-
 const badgeVariants = cva(styles.root, {
   variants: {
-    color: { gray, red, green, pink, purple, blue, accent },
+    color: {
+      gray: styles.gray,
+      red: styles.red,
+      green: styles.green,
+      pink: styles.pink,
+      purple: styles.purple,
+      blue: styles.blue,
+      accent: styles.accent,
+    },
   },
 })
 

@@ -8,7 +8,7 @@
 
 .input {
   transition: border-color 0.1s;
-  border: 1px solid var(--gray-7);
+  border: 1px solid var(--gray7);
   border-radius: var(--br-6);
   background-color: var(--canvas);
   width: 100%;
@@ -16,12 +16,12 @@
 }
 
 .input:hover {
-  border-color: var(--gray-8);
+  border-color: var(--gray8);
 }
 
 .input:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--gray-9);
+  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--gray9);
 }
 
 /* Disable zoom on iOS */
@@ -32,7 +32,7 @@
 }
 
 .input::placeholder {
-  color: var(--gray-9);
+  color: var(--gray9);
 }
 
 [data-size='1'] .input {
@@ -85,7 +85,7 @@
 .suffix svg {
   width: var(--sp-16);
   height: var(--sp-16);
-  color: var(--gray-9);
+  color: var(--gray9);
 }
 
 .prefix:has(button),
