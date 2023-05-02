@@ -1,5 +1,5 @@
-import '@reactants/core/index.css'
-import { Provider } from '@reactants/core'
+import '@reactants/ui/index.css'
+import { Provider } from '@reactants/ui'
 import { AppProps } from 'next/app'
 
 import '../globals.css'

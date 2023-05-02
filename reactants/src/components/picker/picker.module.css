@@ -6,15 +6,15 @@
   border-radius: var(--br-6);
   padding: 3px;
   width: max-content;
-  height: var(--input-2);
+  height: var(--input-medium);
 }
 
 .indicator {
   position: absolute;
-  z-index: -1;
   inset: 0;
   border-radius: var(--br-4);
   background-color: var(--gray4);
+  z-index: -1;
 }
 
 :global(.dark) .indicator {

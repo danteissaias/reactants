@@ -25,6 +25,9 @@ importers:
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.0.4
         version: 2.0.4(@types/react@18.2.0)(react-dom@18.2.0)(react@18.2.0)
+      '@radix-ui/react-label':
+        specifier: ^2.0.1
+        version: 2.0.1(react-dom@18.2.0)(react@18.2.0)
       '@radix-ui/react-portal':
         specifier: ^1.0.2
         version: 1.0.2(react-dom@18.2.0)(react@18.2.0)
@@ -71,8 +74,8 @@ importers:
         specifier: ^2.0.10
         version: 2.0.10(react@18.2.0)
       sonner:
-        specifier: ^0.3.2
-        version: 0.3.2(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^0.3.5
+        version: 0.3.5(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/node':
         specifier: ^18.16.2
@@ -98,8 +101,8 @@ importers:
       '@faker-js/faker':
         specifier: ^7.6.0
         version: 7.6.0
-      '@reactants/core':
-        specifier: workspace:*
+      '@reactants/ui':
+        specifier: workspace:^
         version: link:../reactants
       '@tanstack/react-table':
         specifier: ^8.8.5
@@ -722,6 +725,18 @@ packages:
       '@babel/runtime': 7.21.0
       '@radix-ui/react-use-layout-effect': 1.0.0(react@18.2.0)
       react: 18.2.0
+    dev: false
+
+  /@radix-ui/react-label@2.0.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-qcfbS3B8hTYmEO44RNcXB6pegkxRsJIbdxTMu0PEX0Luv5O2DvTIwwVYxQfUwLpM88EL84QRPLOLgwUSApMsLQ==}
+    peerDependencies:
+      react: ^16.8 || ^17.0 || ^18.0
+      react-dom: ^16.8 || ^17.0 || ^18.0
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@radix-ui/react-primitive': 1.0.2(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@radix-ui/react-menu@2.0.4(@types/react@18.2.0)(react-dom@18.2.0)(react@18.2.0):
@@ -2021,8 +2036,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /sonner@0.3.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-pGT5AI2rPegCesw/Im9xkDgurxAsuJBSH7Z9/+Oeszq5AKorC5YdlieMhwDr+jex+qQCIFA2nAjXsTX/u6aS9A==}
+  /sonner@0.3.5(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-yIwaQ4dftMvFApuruto2t7wGyyaPRpj5qYBWYJIz4Z7uGcVn0IfqI/hWN0JyJN4izNbZFuCYZISf3fOGnvSlNQ==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0

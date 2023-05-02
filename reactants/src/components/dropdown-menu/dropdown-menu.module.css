@@ -48,6 +48,7 @@
   color: #212021;
   font-weight: var(--fw-500);
   font-size: var(--fs-13);
+  font-family: var(--ff-sans);
 }
 
 :global(.dark) .item {
@@ -102,4 +103,5 @@
   color: var(--gray11);
   font-weight: var(--fw-500);
   font-size: var(--fs-13);
+  font-family: var(--ff-sans);
 }

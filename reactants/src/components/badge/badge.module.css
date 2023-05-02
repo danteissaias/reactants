@@ -3,44 +3,47 @@
   vertical-align: middle;
   border-radius: var(--br-6);
   padding: 0 var(--sp-4);
+  font-family: var(--ff-sans);
   font-weight: var(--fw-600);
   font-size: var(--fs-12);
   line-height: var(--lh-20);
   text-transform: uppercase;
   white-space: nowrap;
+  background-color: var(--c3);
+  color: var(--c11);
 }
 
 .gray {
-  background-color: var(--gray4);
-  color: var(--gray11);
+  --c3: var(--gray3);
+  --c11: var(--gray11);
 }
 
 .red {
-  background-color: var(--red4);
-  color: var(--red11);
+  --c3: var(--red3);
+  --c11: var(--red11);
 }
 
 .green {
-  background-color: var(--green4);
-  color: var(--green11);
+  --c3: var(--green3);
+  --c11: var(--green11);
 }
 
 .pink {
-  background-color: var(--pink4);
-  color: var(--pink11);
+  --c3: var(--pink3);
+  --c11: var(--pink11);
 }
 
 .purple {
-  background-color: var(--purple4);
-  color: var(--purple11);
+  --c3: var(--purple3);
+  --c11: var(--purple11);
 }
 
 .blue {
-  background-color: var(--blue4);
-  color: var(--blue11);
+  --c3: var(--blue3);
+  --c11: var(--blue11);
 }
 
 .accent {
-  background-color: var(--accent4);
-  color: var(--accent11);
+  --c3: var(--accent3);
+  --c11: var(--accent11);
 }

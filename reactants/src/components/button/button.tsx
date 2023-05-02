@@ -8,13 +8,13 @@ import styles from './button.module.css'
 
 const buttonVariants = cva(styles.root, {
   variants: {
-    svgOnly: {
-      true: styles.svgOnly,
+    icon: {
+      true: styles.icon,
     },
     size: {
-      '1': styles.size1,
-      '2': styles.size2,
-      '3': styles.size3,
+      small: styles.small,
+      medium: styles.medium,
+      large: styles.large,
     },
     color: {
       gray: styles.gray,
@@ -34,7 +34,7 @@ const buttonVariants = cva(styles.root, {
     {
       variant: 'solid',
       color: 'gray',
-      className: styles.solidGray,
+      className: styles['solid-gray'],
     },
   ],
 })
@@ -52,10 +52,10 @@ export interface ButtonProps
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
-      size = '2',
+      size = 'medium',
       variant = 'solid',
       color = 'gray',
-      svgOnly,
+      icon,
       loading,
       disabled,
       className,
@@ -71,7 +71,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <Comp
         ref={forwardedRef}
-        className={buttonVariants({ size, variant, color, svgOnly, className: cx(className, layoutClassName) })}
+        className={buttonVariants({ size, variant, color, icon: icon, className: cx(className, layoutClassName) })}
         disabled={loading || disabled}
         {...cleanedRest}
       >

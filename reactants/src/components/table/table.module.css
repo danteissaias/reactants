@@ -18,6 +18,7 @@
   color: var(--gray12);
   font-size: var(--fs-14);
   line-height: var(--lh-20);
+  font-family: var(--ff-sans);
 }
 
 :global(.dark) .table-root {
@@ -68,8 +69,8 @@
   background: none;
   padding: 0;
   color: inherit;
-  font-family: var(--ff-sans);
   user-select: none;
+  font-family: inherit;
 }
 
 .sortable:focus-visible {

@@ -100,7 +100,7 @@ const getActionsHeader = <TData, TValue>(headerActions: (ctx: HeaderContext<TDat
         {selectedRows > 0 ? <span className={styles.counter}>{selectedRows}</span> : null}
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button size="1" variant="ghost">
+            <Button size="small" variant="ghost">
               <MoreHorizontal />
             </Button>
           </DropdownMenuTrigger>
@@ -116,7 +116,7 @@ const getActionsCell = <TData, TValue>(rowActions: (ctx: CellContext<TData, TVal
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button size="1" variant="ghost">
+          <Button size="small" variant="ghost">
             <MoreHorizontal />
           </Button>
         </DropdownMenuTrigger>

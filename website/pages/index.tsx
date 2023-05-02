@@ -36,7 +36,7 @@ import {
   toast,
   useTextFilter,
   useTheme,
-} from '@reactants/core'
+} from '@reactants/ui'
 import { ColumnDef, createColumnHelper } from '@tanstack/react-table'
 import ms from 'ms'
 import * as React from 'react'
@@ -100,19 +100,19 @@ function ButtonExample() {
       </Text>
 
       <Stack direction="row" gap="8">
-        <Button size="1">Small</Button>
-        <Button>Medium</Button>
-        <Button size="3">Large</Button>
+        <Button size="small">Small</Button>
+        <Button size="medium">Medium</Button>
+        <Button size="large">Large</Button>
       </Stack>
 
       <Stack direction="row" gap="8">
-        <Button svgOnly size="1">
+        <Button icon size="small">
           <Icons.RotateCw />
         </Button>
-        <Button svgOnly>
+        <Button icon size="medium">
           <Icons.RotateCw />
         </Button>
-        <Button svgOnly size="3">
+        <Button icon size="large">
           <Icons.RotateCw />
         </Button>
       </Stack>
@@ -155,11 +155,11 @@ function ButtonExample() {
       </Stack>
 
       <Stack direction="row" gap="8">
-        <Button loading size="1">
+        <Button loading size="small">
           Small
         </Button>
         <Button loading>Medium</Button>
-        <Button loading size="3">
+        <Button loading size="large">
           Large
         </Button>
       </Stack>
@@ -222,27 +222,27 @@ function InputExample() {
       </Text>
 
       <Stack gap="8" direction="row">
-        <Input size="2" placeholder="john@doe.com" />
-        <Input size="3" placeholder="john@doe.com" />
+        <Input size="medium" placeholder="john@doe.com" />
+        <Input size="large" placeholder="john@doe.com" />
       </Stack>
 
       <Input placeholder="john@doe.com" label="Email address" />
 
       <Stack gap="8" direction="row">
-        <Input size="2" placeholder="john@doe.com" prefix={<Icons.Mail />} />
-        <Input size="3" placeholder="john@doe.com" prefix={<Icons.Mail />} />
+        <Input size="medium" placeholder="john@doe.com" prefix={<Icons.Mail />} />
+        <Input size="large" placeholder="john@doe.com" prefix={<Icons.Mail />} />
       </Stack>
 
       <Stack gap="8" direction="row">
-        <Input size="2" placeholder="john@doe.com" suffix={<Icons.Mail />} />
-        <Input size="3" placeholder="john@doe.com" suffix={<Icons.Mail />} />
+        <Input size="medium" placeholder="john@doe.com" suffix={<Icons.Mail />} />
+        <Input size="large" placeholder="john@doe.com" suffix={<Icons.Mail />} />
       </Stack>
 
       <Input
         placeholder="•••••••••••"
         type={show ? 'text' : 'password'}
         suffix={
-          <Button svgOnly variant="ghost" size="1" onClick={() => setShow((show) => !show)}>
+          <Button icon variant="ghost" size="small" onClick={() => setShow((show) => !show)}>
             {show ? <Icons.EyeOff /> : <Icons.Eye />}
           </Button>
         }
@@ -558,7 +558,12 @@ function TableExample() {
         </Text>
 
         <Table data={data} columns={columns} caption="A table with a search filter." filters={[useTextFilter(search)]}>
-          <SearchInput size="2" value={search} onChange={(e) => setSearch(e.target.value)} style={{ width: '100%' }} />
+          <SearchInput
+            size="medium"
+            value={search}
+            onChange={(e) => setSearch(e.target.value)}
+            style={{ width: '100%' }}
+          />
         </Table>
       </Stack>
 
@@ -597,7 +602,7 @@ function TableExample() {
             <SelectItem value="admin">Admin</SelectItem>
           </Select>
 
-          <SearchInput size="2" value={search2} onChange={(e) => setSearch2(e.target.value)} />
+          <SearchInput size="medium" value={search2} onChange={(e) => setSearch2(e.target.value)} />
         </Table>
       </Stack>
     </Stack>

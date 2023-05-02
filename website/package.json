@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
-    "@reactants/core": "workspace:*",
+    "@reactants/ui": "workspace:^",
     "@tanstack/react-table": "^8.8.5",
     "@types/ms": "^0.7.31",
     "@types/node": "^18.16.2",

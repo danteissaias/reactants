@@ -35,22 +35,16 @@
   color: var(--gray9);
 }
 
-[data-size='1'] .input {
-  padding: 0 6px;
-  height: var(--input-1);
-  font-size: var(--fs-12);
-}
-
-[data-size='2'] .input {
+[data-size='medium'] .input {
   border-radius: var(--br-6);
   padding: 0 var(--sp-8);
-  height: var(--input-2);
+  height: var(--input-medium);
   font-size: var(--fs-14);
 }
 
-[data-size='3'] .input {
+[data-size='large'] .input {
   padding: 0 var(--sp-8);
-  height: var(--input-3);
+  height: var(--input-large);
   font-size: var(--fs-14);
 }
 

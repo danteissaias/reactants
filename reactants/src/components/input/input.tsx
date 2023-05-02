@@ -1,23 +1,24 @@
 import { cx } from 'class-variance-authority'
 import * as React from 'react'
 import { Search, XCircle } from 'react-feather'
+import * as Label from '@radix-ui/react-label'
 
 import { Button, Text } from '@/components'
 import { LayoutProps, useLayoutProps } from '@/utils'
 import styles from './input.module.css'
 
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size' | 'prefix'>, LayoutProps {
-  size?: '2' | '3'
+  size?: 'medium' | 'large'
   prefix?: React.ReactNode
   suffix?: React.ReactNode
   label?: string
 }
 
-export function Input({ className, style, prefix, suffix, size = '2', label, ...props }: InputProps) {
+export function Input({ className, style, prefix, suffix, size = 'medium', label, ...props }: InputProps) {
   const { layoutClassName, cleanedRest } = useLayoutProps(props)
 
   return (
-    <label className={cx(styles.root, className, layoutClassName)} data-size={size} style={style}>
+    <Label.Root className={cx(styles.root, className, layoutClassName)} data-size={size} style={style}>
       {label ? (
         <Text color="gray11" className={styles.label}>
           {label}
@@ -34,7 +35,7 @@ export function Input({ className, style, prefix, suffix, size = '2', label, ...
         />
         <span className={styles.suffix}>{suffix}</span>
       </div>
-    </label>
+    </Label.Root>
   )
 }
 
@@ -51,7 +52,7 @@ export function SearchInput({ onChange, value, ...props }: Omit<InputProps, 'pre
   } as React.ChangeEvent<HTMLInputElement>
 
   const suffix = (
-    <Button svgOnly onClick={() => internalOnChange(clearInputEvent)} size="1" variant="ghost">
+    <Button icon onClick={() => internalOnChange(clearInputEvent)} size="small" variant="ghost">
       <XCircle />
     </Button>
   )

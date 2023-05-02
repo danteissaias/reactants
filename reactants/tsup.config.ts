@@ -25,7 +25,7 @@ export default defineConfig({
           const { code, exports } = transform({
             code: await fs.readFile(pluginData.pathDir),
             filename: pluginData.pathDir,
-            cssModules: true,
+            cssModules: { pattern: '[name]_[local]__[hash]' },
             drafts: { nesting: true },
           })
 
