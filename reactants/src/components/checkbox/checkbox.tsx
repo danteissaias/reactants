@@ -5,6 +5,7 @@ import { Check, Minus } from 'react-feather'
 
 import { LayoutProps, useLayoutProps } from '@/utils'
 import styles from './checkbox.module.css'
+import { CheckIcon } from '@/icons'
 
 export interface CheckboxProps extends CheckboxPrimitive.CheckboxProps, LayoutProps {}
 
@@ -18,8 +19,8 @@ export const Checkbox = React.forwardRef<React.ElementRef<typeof CheckboxPrimiti
         className={cx(styles.root, className, layoutClassName)}
         {...cleanedRest}
       >
-        <CheckboxPrimitive.Indicator className={styles.check}>
-          {props.checked === 'indeterminate' ? <Minus /> : <Check />}
+        <CheckboxPrimitive.Indicator asChild forceMount className={styles.check}>
+          {props.checked === 'indeterminate' ? <Minus /> : <CheckIcon />}
         </CheckboxPrimitive.Indicator>
       </CheckboxPrimitive.Root>
     )

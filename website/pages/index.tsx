@@ -179,6 +179,12 @@ function CheckboxExample() {
         <Checkbox checked="indeterminate" />
         <Checkbox checked />
       </Stack>
+
+      <Stack gap="8" direction="row">
+        <Checkbox disabled />
+        <Checkbox disabled checked="indeterminate" />
+        <Checkbox disabled checked />
+      </Stack>
     </Stack>
   )
 }
@@ -385,7 +391,11 @@ const columns: ColumnDef<User, string | number>[] = [
   columnHelper.accessor('email', { header: 'Email', enableSorting: false }),
   columnHelper.accessor('type', {
     header: 'Type',
-    cell: ({ getValue }) => <Badge color={getValue() === 'admin' ? 'green' : undefined}>{getValue()}</Badge>,
+    cell: ({ getValue }) => (
+      <Badge color={getValue() === 'admin' ? 'green' : undefined}>
+        {getValue()[0].toUpperCase() + getValue().slice(1)}
+      </Badge>
+    ),
   }),
   columnHelper.accessor('createdAt', {
     header: 'Created at',
