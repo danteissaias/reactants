@@ -1,16 +1,11 @@
 {
   "name": "@reactants/ui",
   "version": "0.0.2",
-  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -19,10 +14,12 @@
     },
     "./index.css": "./dist/index.css"
   },
+  "sideEffects": false,
   "scripts": {
     "prepublishOnly": "pnpm build",
     "dev": "nodemon --watch \"src/**/*\" -e ts,tsx,css --exec \"tsup src/index.ts\"",
-    "build": "tsup src/index.ts"
+    "build": "tsup src/index.ts",
+    "type-check": "tsc"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.0.3",
@@ -42,10 +39,12 @@
     "clsx": "^1.2.1",
     "framer-motion": "^10.12.4",
     "next-themes": "^0.2.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "sonner": "^0.3.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/node": "^18.16.2",
@@ -56,8 +55,7 @@
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+  "publishConfig": {
+    "access": "public"
   }
 }
