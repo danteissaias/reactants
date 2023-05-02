@@ -1,15 +1,14 @@
 .root {
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: var(--br-6);
-  padding: 0 var(--sp-4);
-  font-family: var(--ff-sans);
-  font-weight: var(--fw-600);
-  font-size: var(--fs-12);
-  line-height: var(--lh-20);
-  text-transform: uppercase;
-  white-space: nowrap;
-  background-color: var(--c3);
+  display: inline-flex;
+  gap: var(--sp-8);
+  align-items: center;
+  height: var(--sp-24);
+  padding: 0 var(--sp-8);
+  background: var(--bg);
+  font-size: var(--fs-13);
+  font-weight: var(--fw-500);
+  border-radius: var(--br-round);
+  background: var(--c3);
   color: var(--c11);
 }
 
