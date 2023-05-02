@@ -11,6 +11,7 @@
   border: 1px solid var(--gray8);
   cursor: pointer;
   display: flex;
+  --focus: var(--gray9);
 }
 
 @media (hover: hover) {
@@ -30,6 +31,7 @@
 }
 
 .root:focus-visible {
+  outline: 0;
   box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--focus);
 }
 
