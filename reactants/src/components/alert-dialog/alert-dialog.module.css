@@ -34,6 +34,7 @@
   max-width: 400px;
   max-height: 85vh;
   font-family: var(--ff-sans);
+  --canvas: var(--gray2);
 }
 
 :global(.dark) .content {
