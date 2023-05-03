@@ -8,5 +8,12 @@
   "devDependencies": {
     "prettier": "^2.8.8",
     "turbo": "^1.9.3"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "all",
+    "printWidth": 120
   }
 }
