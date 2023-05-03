@@ -15,6 +15,10 @@ const badgeVariants = cva(styles.root, {
       blue: styles.blue,
       accent: styles.accent,
     },
+    variant: {
+      solid: styles.solid,
+      soft: styles.soft,
+    },
   },
 })
 
@@ -24,8 +28,10 @@ export interface BadgeProps extends Omit<React.HTMLAttributes<HTMLSpanElement>, 
   children: React.ReactNode
 }
 
-export function Badge({ color = 'gray', className, ...props }: BadgeProps) {
+export function Badge({ color = 'gray', variant = 'soft', className, ...props }: BadgeProps) {
   const { layoutClassName, cleanedRest } = useLayoutProps(props)
 
-  return <span className={badgeVariants({ color, className: cx(className, layoutClassName) })} {...cleanedRest} />
+  return (
+    <span className={badgeVariants({ color, variant, className: cx(className, layoutClassName) })} {...cleanedRest} />
+  )
 }

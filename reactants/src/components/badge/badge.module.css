@@ -4,45 +4,69 @@
   align-items: center;
   height: var(--sp-24);
   padding: 0 var(--sp-8);
-  background: var(--bg);
   font-size: var(--fs-13);
   font-weight: var(--fw-500);
   border-radius: var(--br-round);
+}
+
+.solid {
+  background: var(--c9);
+  color: #fff;
+
+  &::selection {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+}
+
+.soft {
   background: var(--c3);
   color: var(--c11);
+
+  &::selection {
+    background: var(--c9);
+    color: #fff;
+  }
 }
 
 .gray {
   --c3: var(--grayA3);
+  --c9: var(--gray9);
   --c11: var(--gray11);
 }
 
 .red {
   --c3: var(--red3);
+  --c9: var(--red9);
   --c11: var(--red11);
 }
 
 .green {
   --c3: var(--green3);
+  --c9: var(--green9);
   --c11: var(--green11);
 }
 
 .pink {
   --c3: var(--pink3);
+  --c9: var(--pink9);
   --c11: var(--pink11);
 }
 
 .purple {
   --c3: var(--purple3);
+  --c9: var(--purple9);
   --c11: var(--purple11);
 }
 
 .blue {
   --c3: var(--blue3);
+  --c9: var(--blue9);
   --c11: var(--blue11);
 }
 
 .accent {
   --c3: var(--accent3);
+  --c9: var(--accent9);
   --c11: var(--accent11);
 }

@@ -81,12 +81,30 @@ function BadgeExample() {
       </Text>
 
       <Stack direction="row" gap="8">
-        <Badge>Default</Badge>
+        <Badge>Gray</Badge>
         <Badge color="red">Red</Badge>
         <Badge color="green">Green</Badge>
         <Badge color="pink">Pink</Badge>
         <Badge color="purple">Purple</Badge>
         <Badge color="blue">Blue</Badge>
+      </Stack>
+      <Stack direction="row" gap="8">
+        <Badge variant="solid">Gray</Badge>
+        <Badge variant="solid" color="red">
+          Red
+        </Badge>
+        <Badge variant="solid" color="green">
+          Green
+        </Badge>
+        <Badge variant="solid" color="pink">
+          Pink
+        </Badge>
+        <Badge variant="solid" color="purple">
+          Purple
+        </Badge>
+        <Badge variant="solid" color="blue">
+          Blue
+        </Badge>
       </Stack>
     </Stack>
   )
