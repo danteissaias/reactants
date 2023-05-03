@@ -28,6 +28,7 @@ const buttonVariants = cva(styles.root, {
     variant: {
       solid: styles.solid,
       ghost: styles.ghost,
+      soft: styles.soft,
     },
   },
   compoundVariants: [

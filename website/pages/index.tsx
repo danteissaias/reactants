@@ -127,6 +127,25 @@ function ButtonExample() {
       </Stack>
 
       <Stack direction="row" gap="8">
+        <Button variant="soft"> Gray</Button>
+        <Button variant="soft" color="red">
+          Red
+        </Button>
+        <Button variant="soft" color="green">
+          Green
+        </Button>
+        <Button variant="soft" color="pink">
+          Pink
+        </Button>
+        <Button variant="soft" color="purple">
+          Purple
+        </Button>
+        <Button variant="soft" color="blue">
+          Blue
+        </Button>
+      </Stack>
+
+      <Stack direction="row" gap="8">
         <Button variant="ghost">Gray</Button>
         <Button variant="ghost" color="red">
           Red
