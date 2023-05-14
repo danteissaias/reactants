@@ -186,6 +186,9 @@ function ButtonExample() {
         <Button disabled color="red">
           Solid
         </Button>
+        <Button disabled variant="soft">
+          Soft
+        </Button>
         <Button disabled variant="ghost">
           Ghost
         </Button>

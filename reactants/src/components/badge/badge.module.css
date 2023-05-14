@@ -12,21 +12,11 @@
 .solid {
   background: var(--c9);
   color: #fff;
-
-  &::selection {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
-  }
 }
 
 .soft {
   background: var(--c3);
   color: var(--c11);
-
-  &::selection {
-    background: var(--c9);
-    color: #fff;
-  }
 }
 
 .gray {
