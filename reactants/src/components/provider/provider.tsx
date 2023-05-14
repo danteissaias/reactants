@@ -19,7 +19,7 @@ export function Provider({ children }: ProviderProps) {
       {children}
 
       {mounted && (
-        <Portal.Root>
+        <Portal.Root asChild>
           <Toaster />
         </Portal.Root>
       )}
