@@ -3,9 +3,16 @@
   justify-content: space-between;
   align-items: center;
   gap: var(--sp-8);
-  transition: background-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s;
   cursor: pointer;
-  box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), 0 0 0 0 rgb(0 0 0 / 0%),
+  box-shadow:
+    inset 0 0 0 1px var(--grayA7),
+    inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+    0 0 0 0 rgb(0 0 0 / 0%),
     0 0 0 0 rgb(0 0 0 / 0%);
   border: 0;
   border-radius: var(--br-6);
@@ -26,7 +33,10 @@
 
 @media (hover: hover) {
   .button:hover {
-    box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), var(--bs-button);
+    box-shadow:
+      inset 0 0 0 1px var(--grayA7),
+      inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+      var(--bs-button);
     background-color: #fff;
   }
 
@@ -48,8 +58,12 @@
 
 .button:focus-visible {
   outline: 0;
-  box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), 0 0 0 0 rgb(0 0 0 / 0%),
-    0 0 0 2px var(--canvas), 0 0 0 4px var(--gray9);
+  box-shadow:
+    inset 0 0 0 1px var(--grayA7),
+    inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+    0 0 0 0 rgb(0 0 0 / 0%),
+    0 0 0 2px var(--canvas),
+    0 0 0 4px var(--gray9);
 }
 
 .button[data-placeholder] {

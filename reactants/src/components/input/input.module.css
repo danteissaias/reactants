@@ -7,7 +7,9 @@
 }
 
 .input {
-  transition: border-color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
   border: 1px solid var(--gray7);
   border-radius: var(--br-6);
   background-color: var(--canvas);
@@ -15,13 +17,10 @@
   font-family: var(--ff-sans);
 }
 
-.input:hover {
-  border-color: var(--gray8);
-}
-
 .input:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--gray9);
+  border-color: var(--gray10);
+  box-shadow: 0 0 0 3px var(--gray7);
 }
 
 /* Disable zoom on iOS */

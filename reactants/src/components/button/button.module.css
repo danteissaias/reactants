@@ -2,7 +2,11 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    transform 0.15s ease,
+    color 0.15s ease,
+    box-shadow 0.15s ease;
   cursor: pointer;
   border: 0;
   font-weight: var(--fw-500);
@@ -12,7 +16,9 @@
 
 .root:focus-visible {
   outline: 0;
-  box-shadow: 0 0 0 2px var(--canvas), 0 0 0 4px var(--c9);
+  box-shadow:
+    0 0 0 2px var(--canvas),
+    0 0 0 4px var(--c9);
 }
 
 .root:disabled {
@@ -219,19 +225,27 @@
 }
 
 .solid-gray {
-  box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), 0 0 0 0 rgb(0 0 0 / 0%),
+  box-shadow:
+    inset 0 0 0 1px var(--grayA7),
+    inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+    0 0 0 0 rgb(0 0 0 / 0%),
     0 0 0 0 rgb(0 0 0 / 0%);
   background-color: #fff;
   color: #212021;
 }
 
 .solid-gray:focus-visible {
-  box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), 0 0 0 2px var(--canvas),
+  box-shadow:
+    inset 0 0 0 1px var(--grayA7),
+    inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+    0 0 0 2px var(--canvas),
     0 0 0 4px var(--c9);
 }
 
 .solid-gray:disabled {
-  box-shadow: inset 0 0 0 1px var(--grayA5), inset 0 -1px 0 0 rgb(0 0 0 / 7.5%);
+  box-shadow:
+    inset 0 0 0 1px var(--grayA5),
+    inset 0 -1px 0 0 rgb(0 0 0 / 7.5%);
   background: #fff;
   color: var(--gray9);
 }
@@ -243,7 +257,10 @@
 }
 
 :global(.dark) .solid-gray:focus-visible {
-  box-shadow: inset 0 0 0 1px var(--grayA4), 0 0 0 2px var(--canvas), 0 0 0 4px var(--c9);
+  box-shadow:
+    inset 0 0 0 1px var(--grayA4),
+    0 0 0 2px var(--canvas),
+    0 0 0 4px var(--c9);
 }
 
 :global(.dark) .solid-gray:disabled {
@@ -254,18 +271,26 @@
 
 @media (hover: hover) {
   .solid-gray:not(:disabled):hover {
-    box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), var(--bs-button);
+    box-shadow:
+      inset 0 0 0 1px var(--grayA7),
+      inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+      var(--bs-button);
     background-color: #fff;
   }
 
   .solid-gray:not(:disabled):hover:focus-visible {
-    box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), 0 0 0 2px var(--canvas),
+    box-shadow:
+      inset 0 0 0 1px var(--grayA7),
+      inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+      0 0 0 2px var(--canvas),
       0 0 0 4px var(--c9);
   }
 }
 
 .solid-gray:not(:disabled):active {
-  box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%);
+  box-shadow:
+    inset 0 0 0 1px var(--grayA7),
+    inset 0 -1px 0 0 rgb(0 0 0 / 10%);
   background-color: #fff;
 }
 
@@ -274,7 +299,10 @@
 }
 
 .solid-gray:not(:disabled):active:focus-visible {
-  box-shadow: inset 0 0 0 1px var(--grayA7), inset 0 -1px 0 0 rgb(0 0 0 / 10%), 0 0 0 2px var(--canvas),
+  box-shadow:
+    inset 0 0 0 1px var(--grayA7),
+    inset 0 -1px 0 0 rgb(0 0 0 / 10%),
+    0 0 0 2px var(--canvas),
     0 0 0 4px var(--c9);
 }
 
