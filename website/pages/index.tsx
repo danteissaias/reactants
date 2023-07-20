@@ -736,6 +736,7 @@ function ThemeSwitcher() {
         right: 24,
         top: 24,
         position: 'fixed',
+        zIndex: 99,
       }}
     >
       <Select value={theme} onValueChange={setTheme}>
