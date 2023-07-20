@@ -20,7 +20,7 @@
 .input:focus-visible {
   outline: 0;
   border-color: var(--gray10);
-  box-shadow: 0 0 0 3px var(--gray7);
+  box-shadow: 0 0 0 3px var(--gray6);
 }
 
 /* Disable zoom on iOS */
