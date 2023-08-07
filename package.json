@@ -6,8 +6,8 @@
     "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "prettier": "^3.0.0",
-    "turbo": "^1.10.7"
+    "prettier": "^3.0.1",
+    "turbo": "^1.10.12"
   },
   "prettier": {
     "semi": false,
